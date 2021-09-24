@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Material Design for Bootstrap</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<style>
+  @media (min-width: 992px) {
+    #navbarFluid {
+      padding: 10px 200px;
+    }
+
+    #sushiCards {
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+    }
+
+    #findUs {
+      display: flex;
+      flex-direction: row;
+      padding: 0 0;
+      align-items: center;
+    }
+
+    #findUs>.findUsDiv {
+      width: 75%;
+      padding: 0 50px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    #findUs>.findUsDiv {
+      padding-top: 35px;
+      padding-bottom: 15px;
+    }
+</style>
+
+<body>
+  <!-- Navbar-->
+  <nav id="navbarFluid" class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a style="font-family: 'Nunito', sans-serif; text-transform: uppercase; font-weight: 800; letter-spacing: 5px;"
+        class="navbar-brand" href="#">Sushi</a>
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a style="font-weight: 500; font-family: 'Nunito', sans-serif;" class="nav-link active" aria-current="page"
+              href="#">Hem</a>
+          </li>
+          <li class="nav-item">
+            <a style="font-weight: 500; font-family: 'Nunito', sans-serif;" class="nav-link" href="#">Meny</a>
+          </li>
+          <li class="nav-item">
+            <a style="font-weight: 500; font-family: 'Nunito', sans-serif;" class="nav-link" href="#" tabindex="-1"
+              aria-disabled="true">Beställ</a>
+          </li>
+          <li class="nav-item">
+            <a style="font-weight: 500; font-family: 'Nunito', sans-serif;" class="nav-link" href="#" tabindex="-1"
+              aria-disabled="true">Om Oss</a>
+          </li>
+          <li class="nav-item">
+            <a style="font-weight: 500; font-family: 'Nunito', sans-serif;" class="nav-link" href="#" tabindex="-1"
+              aria-disabled="true">Kontakt</a>
+          </li>
+        </ul>
+        <form class="d-flex input-group w-auto">
+          <input type="search" class="form-control" placeholder="Type query" aria-label="Search" />
+          <button class="btn btn-outline-primary" type="button" data-mdb-ripple-color="dark">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar-->
+
+  <!-- Jumbotron-->
+
+  <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+    style="margin-bottom: 35px!important; height: 500px; background-image: url('img/sushi.jpg'); display: flex; flex-direction: column;">
+    <!-- <h1 class="mb-3 h2">Jumbotron</h1> -->
+    <img style="width: auto; height: 200px; margin: auto;" src="img/sushiLogo.jpg" alt="">
+  </div>
+  <!-- Jumbotron -->
+
+  <div class="container-fluid">
+    <div>
+      <h2 style="text-transform: uppercase; font-family: 'Nunito', sans-serif; text-align: center;">
+        <span style="font-weight: 800; letter-spacing: 5px">Sushi</span> Helsingborg
+      </h2>
+    </div>
+    <div style="padding-top: 5px;">
+      <h5 style="font-weight: 600; text-transform: uppercase; font-family: 'Nunito', sans-serif; text-align: center;">
+        Japas, Sushi & Bowls</h5>
+    </div>
+    <div style="padding-top: 25px;">
+      <p style="font-weight: 600; font-family: 'Nunito', sans-serif; text-align: center; width: 450px; margin: auto;">En
+        unik japansk matupplevelse i en spektakulär omgivning, i hjärtat av Helsingborg.
+        Vi lockar både familjer och trendsättare, vilket är känt för att göra det modernt och vänligt och skapar en
+        känsla av lyx för alla!</p>
+    </div>
+    <div style="padding-top: 15px;">
+      <address style="font-weight: 500; font-family: 'Nunito', sans-serif; text-align: center;">Tel: 042 - 123 45 67
+        <br>email@sushi.com
+      </address>
+    </div>
+  </div>
+
+  <div style="padding-top: 10px; text-align: center;" id="sushiCards" class="container-fluid">
+    <div style="border-radius: 1px;" class="card" style="width: 100%;">
+      <img style="border-radius: 1px;" src="img/sushiMenu/sushi (1).jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p style="font-weight: 800; letter-spacing: 5px; font-family: 'Nunito', sans-serif; text-align: center; text-transform: uppercase;"
+          class="card-text">Salmon Nigiri</p>
+      </div>
+    </div>
+    <div style="border-radius: 1px;" class="card" style="width: 100%;">
+      <img style="border-radius: 1px;" src="img/sushiMenu/sushi (2).jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p style="font-weight: 600; letter-spacing: 5px; font-family: 'Nunito', sans-serif; text-align: center; text-transform: uppercase;"
+          class="card-text">Vegetable Rolls</p>
+      </div>
+    </div>
+    <div style="border-radius: 1px;" class="card" style="width: 100%;">
+      <img style="border-radius: 1px;" src="img/sushiMenu/sushi (3).jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p style="font-weight: 800; letter-spacing: 5px; font-family: 'Nunito', sans-serif; text-align: center; text-transform: uppercase;"
+          class="card-text">Sushi Kaviar</p>
+      </div>
+    </div>
+    <div style="border-radius: 1px;" class="card" style="width: 100%;">
+      <img style="border-radius: 1px;" src="img/sushiMenu/sushi (4).png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p style="font-weight: 600; letter-spacing: 5px; font-family: 'Nunito', sans-serif; text-align: center; text-transform: uppercase;"
+          class="card-text">Vegan Delight</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="findUs" class="container-fluid">
+    <div class="findUsDiv">
+      <h2
+        style="font-weight: 800; letter-spacing: 5px; font-family: 'Nunito', sans-serif; text-align: center; text-transform: uppercase;">
+        Välkomna In Hos Oss</h2>
+      <p style="font-weight: 500; font-family: 'Nunito', sans-serif; text-align: center; text-transform: none;">
+        Genom att boka bord garanterar du din plats i vår sushirestaurang i Helsingborg på ett datum och tid efter eget
+        val, så säg hejdå väntetider! För att boka, välj bara datum och tid efter eget val och vi gör resten.
+      </p>
+    </div>
+    <div style="width: 100%">
+      <iframe style="width: 100%"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71330.5968686832!2d12.662433883343585!3d56.03458371675958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46522d7a50a22925%3A0x4019078290e7a90!2sHelsingborg!5e0!3m2!1sen!2sse!4v1632435978417!5m2!1sen!2sse"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <div style="padding: 35px 0; box-shadow: 0 10px 15px 12px rgb(0 0 0 / 7%), 0 4px 6px -2px rgb(0 0 0 / 5%);"
+    class="container-fluid">
+    <div style="text-align: center;">
+      <img style="width: auto; height: 30px;" src="img/endOfPage/foodoraLogo.png" alt="">
+      <img style="width: auto; height: 150px;" src="img/endOfPage/rankedTripAdvisor.png" alt="">
+      <img style="width: auto; height: 140px;" src="img/endOfPage/foodAwards.jpg" alt="">
+    </div>
+  </div>
+
+
+  <!-- End your project here-->
+
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example2" class="form-control" />
+                <label class="form-label" for="form5Example2">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+          repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+          eum harum corrupti dicta, aliquam sequi voluptate quas.
+        </p>
+      </section>
+      <!-- Section: Text -->
+
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright -
+      <a class="text-white" href="#">Sushi Helsingborg</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript"></script>
+</body>
+
+</html>
