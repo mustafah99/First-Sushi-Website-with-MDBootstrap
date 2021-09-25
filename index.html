@@ -49,6 +49,11 @@
     {
       width: 450px;
     }
+
+    
+    #footerFlexbox {
+      display: flex; flex-direction: row; justify-content: space-evenly;
+    }
   }
 
   @media (max-width: 992px) {
@@ -58,6 +63,10 @@
     }
     #tripAdvisor {
       height: 120px!important;
+    }
+
+    #footerFlexbox > .bottomDiv {
+      padding-top: 25px;
     }
   }
 </style>
@@ -215,7 +224,7 @@
       <!-- Section: Social media -->
 
       <section>
-        <div style="display: flex; flex-direction: row; justify-content: space-evenly;">
+        <div id="footerFlexbox">
           <div>
             <h5 style="text-align: left; font-family: 'Nunito', sans-serif; text-transform: uppercase; font-weight: 600; letter-spacing: 5px;">Sushi Helsingborg</h5>
             <p style="text-align: left;  font-family: 'Nunito', sans-serif; font-weight: 500"><span style="color: darkgrey">Adress:</span> <br>Kurirgatan 1<br>254 55 Helsingborg</p>
@@ -225,7 +234,7 @@
 
           </div>
           
-          <div>
+          <div class="bottomDiv">
             <h5 style="text-align: left; font-family: 'Nunito', sans-serif; text-transform: uppercase; font-weight: 600; letter-spacing: 5px;">Öppettider</h5>
             <p style="text-align: left;  font-family: 'Nunito', sans-serif; font-weight: 500"><span style="color: darkgrey">Buffé:</span> <br>Tisdag-Fredag		11:30 - 14:30</p>
             <p style="text-align: left;  font-family: 'Nunito', sans-serif; font-weight: 500"><span style="color: darkgrey">Ordinarie:</span> <br>Måndag-Söndag		10:30 - 20:00</p>
